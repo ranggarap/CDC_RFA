@@ -6,6 +6,8 @@ namespace AkademikADOApp
 {
     public partial class Form1 : Form
     {
+        string connString =
+            "Data Source=LAPTOP-M7PL4IES\\RANGGAFADHILAH;Initial Catalog=DBAkademikADO;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
