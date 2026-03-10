@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnconnect = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.btndisconnected = new System.Windows.Forms.Button();
-            this.lblstatus = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnconnect
+            // btnConnect
             // 
-            this.btnconnect.Location = new System.Drawing.Point(506, 312);
-            this.btnconnect.Name = "btnconnect";
-            this.btnconnect.Size = new System.Drawing.Size(195, 25);
-            this.btnconnect.TabIndex = 0;
-            this.btnconnect.Text = "connect Database";
-            this.btnconnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Location = new System.Drawing.Point(506, 312);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(195, 25);
+            this.btnConnect.TabIndex = 0;
+            this.btnConnect.Text = "connect Database";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btndisconnected
             // 
@@ -51,23 +52,23 @@
             this.btndisconnected.Text = "disconnect Database";
             this.btndisconnected.UseVisualStyleBackColor = true;
             // 
-            // lblstatus
+            // lblStatus
             // 
-            this.lblstatus.AutoSize = true;
-            this.lblstatus.Location = new System.Drawing.Point(269, 88);
-            this.lblstatus.Name = "lblstatus";
-            this.lblstatus.Size = new System.Drawing.Size(53, 20);
-            this.lblstatus.TabIndex = 2;
-            this.lblstatus.Text = "status";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(269, 88);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(53, 20);
+            this.lblStatus.TabIndex = 2;
+            this.lblStatus.Text = "status";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblstatus);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btndisconnected);
-            this.Controls.Add(this.btnconnect);
+            this.Controls.Add(this.btnConnect);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -77,9 +78,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnconnect;
+        private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btndisconnected;
-        private System.Windows.Forms.Label lblstatus;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 
