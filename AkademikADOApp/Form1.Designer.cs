@@ -30,7 +30,7 @@
         {
             this.btnconnect = new System.Windows.Forms.Button();
             this.btndisconnected = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblstatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnconnect
@@ -51,21 +51,21 @@
             this.btndisconnected.Text = "disconnect Database";
             this.btndisconnected.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblstatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(269, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lblstatus.AutoSize = true;
+            this.lblstatus.Location = new System.Drawing.Point(269, 88);
+            this.lblstatus.Name = "lblstatus";
+            this.lblstatus.Size = new System.Drawing.Size(53, 20);
+            this.lblstatus.TabIndex = 2;
+            this.lblstatus.Text = "status";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblstatus);
             this.Controls.Add(this.btndisconnected);
             this.Controls.Add(this.btnconnect);
             this.Name = "Form1";
@@ -79,7 +79,7 @@
 
         private System.Windows.Forms.Button btnconnect;
         private System.Windows.Forms.Button btndisconnected;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblstatus;
     }
 }
 
