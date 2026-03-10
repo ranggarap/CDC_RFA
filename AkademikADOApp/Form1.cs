@@ -12,5 +12,6 @@ namespace AkademikADOApp
         {
             InitializeComponent();
         }
+        SqlConnection conn;
     }
 }
