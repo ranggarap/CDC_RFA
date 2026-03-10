@@ -31,5 +31,22 @@ namespace AkademikADOApp
                 MessageBox.Show("Koneksi gagal : " + ex.Message);
             }
         }
+
+        private void btndisconnect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+
+                lblStatus.Text = "Status : Database Disconnected";
+                MessageBox.Show("Koneksi ke database berhasil ditutup!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi gagal : " + ex.Message);
+            }
+
+        }
     }
 }

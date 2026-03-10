@@ -51,6 +51,7 @@
             this.btndisconnected.TabIndex = 1;
             this.btndisconnected.Text = "disconnect Database";
             this.btndisconnected.UseVisualStyleBackColor = true;
+            this.btndisconnected.Click += new System.EventHandler(this.btndisconnect_Click);
             // 
             // lblStatus
             // 
